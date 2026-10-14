@@ -1,0 +1,33 @@
+[Desktop Entry]
+Type=Application
+Name=ShareScreen
+GenericName=Captura de tela
+Comment=Capture a tela, grave vídeos e GIFs e anote imagens
+Exec=@BIN@
+Icon=sharescreen
+Terminal=false
+Categories=Graphics;
+Keywords=screenshot;captura;print;gravar;gravação;recorder;gif;sharex;
+StartupNotify=false
+StartupWMClass=ShareScreen
+Actions=Region;Fullscreen;Window;Record;RecordGif;
+
+[Desktop Action Region]
+Name=Capturar região
+Exec=@BIN@ --region
+
+[Desktop Action Fullscreen]
+Name=Capturar tela inteira
+Exec=@BIN@ --fullscreen
+
+[Desktop Action Window]
+Name=Capturar janela ativa
+Exec=@BIN@ --window
+
+[Desktop Action Record]
+Name=Gravar vídeo
+Exec=@BIN@ --record
+
+[Desktop Action RecordGif]
+Name=Gravar GIF
+Exec=@BIN@ --record-gif
